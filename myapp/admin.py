@@ -7,6 +7,10 @@ class PersonAdmin(admin.ModelAdmin):
     list_filter = ["deleted"]
     list_per_page = 5
     search_fields = ["first_name", "last_name"]
+    ordering = ["-id"]
+    exclude = ["deleted"]
+    readonly_fields = ["deleted"]
+    fields = ["first_name", "last_name", "age"]
 
 
 admin.site.register(Person, PersonAdmin)
