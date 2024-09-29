@@ -28,3 +28,19 @@ LANGUAGE_CODE = 'ja'
 
 TIME_ZONE = 'Asia/Tokyo'
 ```
+
+## Migration
+
+```bash
+python manage.py makemigrations
+```
+
+```bash
+python manage.py migrate
+```
+
+### One liner
+
+```bash
+python manage.py makemigrations && python manage.py migrate
+```
