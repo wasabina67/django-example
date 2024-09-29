@@ -55,3 +55,42 @@ from .models import MyModel
 
 admin.site.register(MyModel)
 ```
+
+## Createsuperuser
+
+```bash
+python manage.py createsuperuser
+```
+
+### user1
+
+```bash
+user1
+```
+
+```bash
+user1@example.com
+```
+
+```bash
+password6767
+```
+
+### user2
+
+```bash
+user2
+```
+
+```bash
+password6767
+```
+
+## Runserver
+
+```bash
+python manage.py runserver
+```
+
+- http://127.0.0.1:8000/
+- http://127.0.0.1:8000/admin/login/
